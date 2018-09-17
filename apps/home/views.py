@@ -4,7 +4,6 @@ from django.shortcuts import render
 # Create your views here.
 from account.models import Navigation, Category, Banner
 
-
 def index(request):
     navigations = Navigation.objects.all()
     categories = Category.objects.all()
