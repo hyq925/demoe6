@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load staticfiles %}
+
 <head>
     <meta charset="UTF-8">
-    <title>{% block tittle %}{% endblock %}</title>
-    <link href="{% static 'css/common.css' %}" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.js"></script>
 
-    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+
+    {% block page_css %}
+
+    {% endblock %}
+
     {% block page_jq %}
 
-     {% endblock %}
-    {% block  page_css %}
-
-    {% endblock %}  
+    {% endblock %}
 
 </head>
-
 <body>
-
 <div id="warp">
     <div id="head">
         {% block page_head %}
@@ -31,7 +32,7 @@
         {% block page_footer %}
         {% endblock %}
     </div>
-
 </div>
+
 </body>
 </html>

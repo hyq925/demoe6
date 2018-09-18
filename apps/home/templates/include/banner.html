@@ -1,18 +1,8 @@
-<div id="banner">
-     <div class="pic">
-          {% for img in banners %}
-              <div class="picImg"><img src="static/{{ img.image }}" width="520" height="280" alt=""/></div>
-          {% endfor %}
-
-     </div>
-    <ul class="tabs">
-        <li class="bg"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+<div class="banner" id="b04">
+    <ul>
+        {% for banner in  banners %}
+            <li><a href="#"><img src="static/{{ banner.image }}"></a></li>
+        {% endfor %}
 
     </ul>
-    <div class="btn btn1">&lt;</div>
-    <div class="btn btn2">&gt;</div>
 </div>
