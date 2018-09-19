@@ -15,5 +15,7 @@ urlpatterns = [
     url('order/',include('order.urls')),
     url('pay/',include('pay.urls')),
     url('shopcar/',include('shopcar.urls')),
+    url('search/',include('search.urls')),
+    url('shop_detail/',include('shop_detail.urls')),
 
 ]

@@ -1,0 +1,9 @@
+{% load staticfiles %}
+
+    <img src="{% static 'img/site/logo.gif' %}" class="logo">
+    <form class="search" action="{% url 'search' %} " method="get" >
+        <input name="keyword" type="text">
+        <input type="submit" value="搜索">
+    </form>
+{#<div class="search" id="search">#}
+{#</div>#}

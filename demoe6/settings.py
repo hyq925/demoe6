@@ -42,6 +42,8 @@ MY_APPS=[
     'apps.shopcar',
     'apps.order',
     'apps.pay',
+    'apps.search',
+    'apps.shop_detail',
 ]
 # Application definition
 
